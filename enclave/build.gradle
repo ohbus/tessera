@@ -1,0 +1,17 @@
+plugins {
+    id 'application'
+}
+
+dependencyCheck {
+    failBuildOnCVSS = 11
+}
+
+application {
+    applicationName = 'enclave'
+    mainClassName = 'com.quorum.tessera.enclave.rest.Main'
+}
+
+dependencies {
+    compile project(":enclave:enclave-api")
+    compile project(":enclave::enclave-jaxrs")
+}
