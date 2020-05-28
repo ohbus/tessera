@@ -15,5 +15,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: docker/build-push-action@v1
         with:
-          repository: quorumengineering/tessera
+          repository: subhrodip/tessera
           push: false
